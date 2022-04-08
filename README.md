@@ -1,22 +1,22 @@
 # Desafio top100  (PostgreSQL)
 
 ### Descripción proyecto
-Desafio desarrollado por un grupo de estudiantes dentro del Bootcamp Fullstack Javascript Trainee al año 2022,  en el que se crea una plataforma de estudio que sirva como una red social entre estudiantes y docentes, para lo que se necesita almacenar en una base de datos los post y comentarios que se generen.
+Desafio desarrollado por un grupo de estudiantes dentro del Bootcamp Fullstack Javascript Trainee al año 2022,  en el que se crea un sitio web dedicado al mundo cinematográfico donde los usuarios puedan buscar detalles del top 100 de películas más populares. El plus más importante deeste sitio web debe ser la variedad de filtros que ofrece para una búsqueda más efectiva.
 
 ### Contenidos aplicados
 - Tipos de datos
 - Clave primaria y foránea
-- Creación, inserción, modificación y eliminaciones en la tabla
+- Creación de tablas e importacion datos CSV.
+- Consultas 
 
 #### Paso a paso
--  Se crea una base de datos con el comando `CREATE DATABASE` llamada posts_db y luego dos tablas con `CREATE TABLE` (post y comentarios). Las inserciones de informacion a la tabla se realizan con `INSERT INTO`.
--  Para modificar las tablas y agregar una columna llamada "titulo", se realiza con `ALTER TABLE`.
--  Para rellenar el contenido de la columna agregada "titulo", se utiliza el comando`UPDATE`.
--  Si se quiere eliminar algo, se realiza en este ejercicio con comando `DELETE FROM` y se trabaja con el id (*No olvidar poner el WHERE).
+-  Se crea una base de datos con el comando `CREATE DATABASE` llamada peliculas_db y luego dos tablas con `CREATE TABLE` (peliculas y reparto).
+-  Importamos los datos de dos archivos CSV con `COPY TO`
+-  Para realizar consultas especificas se utilizaron los comandos `SELECT FROM` `WHERE` Y `COUNT` `ORDER BY` `LENGHT` `MAX`
 
 ### Instrucciones de instalación
 
-- Para ingresar a ver los archivos del proyecto, dirijase a la carpeta script.sql, y luego a desafio_operaciones_tabla.sql.
+- Para ingresar a ver los archivos del proyecto, dirijase a la carpeta Desafio_Top_100, y luego a desafio.sql, también podrá ver los archivos CSV.
 - Usted puede descargar el proyecto o clonarlo.
 - Para ver las tablas en SQL SHELL(psql) ingrese `SELECT * FROM nombre_tabla;`
 
